@@ -1,0 +1,295 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║          IMMUNITYAI WEBSITE V2 - GITHUB → VERCEL DEPLOYMENT FLOW         ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+COMPLETE WORKFLOW (5 minutes total)
+═══════════════════════════════════════════════════════════════════════════
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ YOUR COMPUTER                                                             │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                           │
+│  1️⃣  PROJECT FOLDER                                                      │
+│  ├── src/                                                               │
+│  ├── package.json                                                       │
+│  ├── vite.config.js                                                     │
+│  └── ... (all files)                                                    │
+│                                                                           │
+│  2️⃣  INITIALIZE GIT                                                      │
+│  $ git init                                                             │
+│  $ git add .                                                            │
+│  $ git commit -m "Initial commit"                                       │
+│                                                                           │
+└─────────────────────────────────────────────────────────────────────────┘
+                                    ↓
+┌─────────────────────────────────────────────────────────────────────────┐
+│ GITHUB                                                                    │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                           │
+│  3️⃣  CREATE REPO                    4️⃣  PUSH CODE                       │
+│  ├── Go to github.com/new          ├── git remote add origin <URL>    │
+│  ├── Name: immunityai-website      ├── git branch -M main             │
+│  ├── Visibility: Public ⭐          └── git push -u origin main         │
+│  └── Click "Create"                                                     │
+│                                                                           │
+│  ✅ Code now at:                                                        │
+│     github.com/YOUR-USERNAME/immunityai-website                         │
+│                                                                           │
+└─────────────────────────────────────────────────────────────────────────┘
+                                    ↓
+┌─────────────────────────────────────────────────────────────────────────┐
+│ VERCEL                                                                    │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                           │
+│  5️⃣  IMPORT REPOSITORY                                                   │
+│  ├── Go to vercel.com/new                                              │
+│  ├── Click "Continue with GitHub"                                      │
+│  ├── Select immunityai-website repo                                    │
+│  └── Auto-detects settings ✓                                           │
+│                                                                           │
+│  6️⃣  DEPLOY                                                              │
+│  ├── Click "Deploy"                                                     │
+│  ├── ⏳ Building... (1-2 minutes)                                        │
+│  ├── ✅ Build successful                                                │
+│  └── 🌐 Site live!                                                      │
+│                                                                           │
+│  ✅ Live at:                                                            │
+│     https://immunityai-website.vercel.app                              │
+│                                                                           │
+└─────────────────────────────────────────────────────────────────────────┘
+                                    ↓
+┌─────────────────────────────────────────────────────────────────────────┐
+│ CONTINUOUS DEPLOYMENT (Automatic!)                                       │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                           │
+│  7️⃣  FUTURE UPDATES                                                      │
+│  ├── Edit files locally                                                │
+│  ├── git add . && git commit -m "Update" && git push                   │
+│  └── ✅ Vercel auto-rebuilds and redeploys!                            │
+│                                                                           │
+│  NO MANUAL DEPLOYMENT NEEDED! 🎉                                        │
+│                                                                           │
+└─────────────────────────────────────────────────────────────────────────┘
+
+
+TIMELINE
+═══════════════════════════════════════════════════════════════════════════
+
+┌──────────┬───────────────────────────────────────────────────────────────┐
+│ Time     │ Action                                                        │
+├──────────┼───────────────────────────────────────────────────────────────┤
+│ 0-1 min  │ Create GitHub repository (github.com/new)                    │
+│ 1-2 min  │ Push code to GitHub (git push)                               │
+│ 2-3 min  │ Connect Vercel to GitHub repo                                │
+│ 3-5 min  │ Vercel builds and deploys                                    │
+│ 5 min ✅ │ SITE IS LIVE! 🚀                                             │
+└──────────┴───────────────────────────────────────────────────────────────┘
+
+
+COMMANDS (COPY-PASTE)
+═══════════════════════════════════════════════════════════════════════════
+
+Step 1: Prepare code
+────────────────────
+cd path/to/project-folder
+
+Step 2: Initialize and commit
+──────────────────────────────
+git init
+git config --global user.name "Your Name"
+git config --global user.email "your@email.com"
+git add .
+git commit -m "Initial commit - ImmunityAI Website v2"
+
+Step 3: Push to GitHub
+──────────────────────
+Replace YOURNAME with your GitHub username:
+
+git remote add origin https://github.com/YOURNAME/immunityai-website.git
+git branch -M main
+git push -u origin main
+
+Step 4: Verify on GitHub
+────────────────────────
+Visit: https://github.com/YOURNAME/immunityai-website
+✅ Should see all your files
+
+
+VERCEL DASHBOARD (Browser)
+═════════════════════════════════════════════════════════════════════════════
+
+Step 5: Deploy to Vercel
+─────────────────────────
+1. Open https://vercel.com/new in browser
+2. Click "Continue with GitHub"
+3. Authorize Vercel (one-time)
+4. Find "immunityai-website" in repo list
+5. Click to import
+6. Settings auto-fill ✓
+   ├── Framework: Vite
+   ├── Build command: npm run build
+   ├── Output directory: dist
+   └── Install command: npm install
+7. Click "Deploy"
+
+Step 6: Monitor deployment
+──────────────────────────
+⏳ Vercel dashboard shows:
+  ├── Running build...
+  ├── ✅ Build completed
+  └── 🚀 Deployment complete
+
+Step 7: Your live site!
+───────────────────────
+Visit: https://immunityai-website.vercel.app
+✅ Site is LIVE and ready!
+
+
+AUTO-DEPLOYMENT SETUP
+═════════════════════════════════════════════════════════════════════════════
+
+From now on:
+─────────────
+Whenever you:
+  1. Edit files locally
+  2. Commit: git commit -m "description"
+  3. Push: git push
+
+Vercel automatically:
+  ✅ Detects changes
+  ✅ Builds new version
+  ✅ Deploys to live site
+  ✅ All in ~1-2 minutes
+
+NO MANUAL DEPLOYMENT NEEDED! 🎉
+
+
+VERIFY EVERYTHING WORKS
+═════════════════════════════════════════════════════════════════════════════
+
+On GitHub:
+  ✓ https://github.com/YOURNAME/immunityai-website
+  ✓ See all files
+  ✓ See commit history
+
+On Vercel:
+  ✓ https://immunityai-website.vercel.app
+  ✓ Site is responsive
+  ✓ All tabs work
+  ✓ Procurement section loads
+  ✓ Team section displays
+  ✓ Links functional
+
+In Vercel Dashboard:
+  ✓ Deployments tab shows "Ready"
+  ✓ Build logs are green
+  ✓ No errors or warnings
+
+
+WHAT IF SOMETHING GOES WRONG?
+═════════════════════════════════════════════════════════════════════════════
+
+Error: "fatal: The current branch master..."
+→ Run: git branch -M main
+
+Error: "Repository not found"
+→ Check: github.com shows your repo
+→ Check: Repository is PUBLIC (not private)
+
+Error: "Vercel can't find repository"
+→ Solution: Disconnect GitHub in Vercel settings
+→ Re-authorize GitHub connection
+→ Try import again
+
+Error: "Build fails" (on Vercel)
+→ Check: Build logs in Vercel dashboard
+→ Try locally: npm install && npm run build
+→ Push fix to GitHub (auto-redeploy)
+
+Can't access localhost:3000?
+→ Different machine? Use: npm run dev -- --host
+→ Port taken? Use: npm run dev -- --port 3001
+
+
+USEFUL LINKS
+═════════════════════════════════════════════════════════════════════════════
+
+GitHub Docs:        https://docs.github.com
+Vercel Docs:        https://vercel.com/docs
+React Docs:         https://react.dev
+Vite Docs:          https://vitejs.dev
+Git Basics:         https://git-scm.com/book/en/v2
+SSH Keys Setup:     https://docs.github.com/en/authentication/connecting-to-github-with-ssh
+
+
+OPTIONAL: CUSTOM DOMAIN
+═════════════════════════════════════════════════════════════════════════════
+
+Want yourname.com instead of vercel.app?
+
+In Vercel Dashboard:
+  1. Project Settings → Domains
+  2. Add custom domain
+  3. Update DNS records (instructions provided)
+  4. Wait 5-10 minutes for DNS
+
+Example DNS Setup:
+  Type:  CNAME
+  Name:  www
+  Value: cname.vercel-dns.com
+
+
+OPTIONAL: ADD ANALYTICS
+═════════════════════════════════════════════════════════════════════════════
+
+Google Analytics:
+  1. Create account at analytics.google.com
+  2. Get Measurement ID (G-XXXXX)
+  3. Add to src/main.jsx
+  4. Push to GitHub (auto-redeploy)
+
+Sentry Error Tracking:
+  1. Sign up at sentry.io
+  2. Create React project
+  3. Get DSN
+  4. Add to src/main.jsx
+  5. Push to GitHub (auto-redeploy)
+
+
+COLLABORATION
+═════════════════════════════════════════════════════════════════════════════
+
+Add team members:
+
+GitHub:
+  1. Settings → Collaborators
+  2. Add their GitHub username
+  3. They can now push changes
+
+Vercel:
+  1. Settings → Team
+  2. Add member
+  3. They can manage deployments
+
+
+SUMMARY
+═════════════════════════════════════════════════════════════════════════════
+
+✅ Create GitHub repo
+✅ Push code from terminal
+✅ Connect to Vercel
+✅ Vercel builds automatically
+✅ Site goes live
+✅ Future updates auto-deploy
+✅ DONE! 🎉
+
+Total time: ~5 minutes
+Difficulty: ⭐ Beginner-friendly
+Maintenance: Minimal (Vercel handles everything)
+
+
+═════════════════════════════════════════════════════════════════════════════
+Generated: March 2026
+Status: ✅ Ready to Deploy
+Next Step: Follow instructions above!
+═════════════════════════════════════════════════════════════════════════════

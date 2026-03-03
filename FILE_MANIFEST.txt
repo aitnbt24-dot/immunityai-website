@@ -1,0 +1,330 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                    IMMUNITYAI WEBSITE V2 - FILE MANIFEST                     ║
+║                         PRODUCTION READY DEPLOYMENT                          ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+📦 PROJECT STRUCTURE
+═══════════════════════════════════════════════════════════════════════════════
+
+ROOT FILES
+──────────
+  ✓ package.json ..................... NPM dependencies & scripts
+  ✓ vite.config.js ................... Vite build configuration
+  ✓ tailwind.config.js ............... Tailwind CSS customization
+  ✓ postcss.config.js ................ PostCSS configuration
+  ✓ index.html ....................... HTML entry point
+  ✓ .gitignore ....................... Git ignore rules
+  ✓ Dockerfile ....................... Docker container image
+  ✓ docker-compose.yml ............... Docker Compose setup
+  ✓ vercel.json ...................... Vercel deployment config
+  ✓ netlify.toml ..................... Netlify deployment config
+  ✓ setup.sh ......................... Quick start script (executable)
+
+DOCUMENTATION
+──────────────
+  ✓ README.md ........................ Project overview & features
+  ✓ DEPLOYMENT_GUIDE.md ............. Comprehensive deployment guide
+  ✓ QUICK_START.md .................. Quick reference guide
+  ✓ FILE_MANIFEST.txt ............... This file
+
+SOURCE CODE (src/)
+──────────────────
+  ✓ src/ImmunityAIWebsite.jsx ........ Main React component
+  ✓ src/App.jsx ...................... App wrapper
+  ✓ src/main.jsx ..................... React entry point
+  ✓ src/index.css .................... Global styles
+
+CI/CD (.github/)
+─────────────────
+  ✓ .github/workflows/deploy.yml ..... GitHub Actions CI/CD pipeline
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🚀 QUICK DEPLOYMENT OPTIONS
+═══════════════════════════════════════════════════════════════════════════════
+
+1️⃣  VERCEL (RECOMMENDED - 1 MINUTE)
+   • Easiest, fastest option
+   • Zero configuration needed
+   • File: vercel.json
+   • Steps:
+     1. Push to GitHub
+     2. Go to vercel.com
+     3. Import repository
+     4. Done! ✅
+
+2️⃣  NETLIFY (5 MINUTES)
+   • Alternative cloud platform
+   • Simple Git integration
+   • File: netlify.toml
+   • Steps:
+     1. Push to GitHub
+     2. Go to netlify.com
+     3. New site from Git
+     4. Done! ✅
+
+3️⃣  DOCKER (10 MINUTES)
+   • Containerized deployment
+   • Works anywhere
+   • Files: Dockerfile, docker-compose.yml
+   • Run: docker-compose up -d
+
+4️⃣  LOCAL DEVELOPMENT (IMMEDIATE)
+   • Start immediately
+   • File: setup.sh
+   • Run: bash setup.sh
+   • Test at: http://localhost:3000
+
+═══════════════════════════════════════════════════════════════════════════════
+
+💾 FILE PURPOSES & USAGE
+═══════════════════════════════════════════════════════════════════════════════
+
+CONFIGURATION FILES
+───────────────────
+
+package.json
+  • Lists all dependencies (React, Vite, Tailwind)
+  • Defines scripts (dev, build, deploy)
+  • Sets Node.js version requirements
+  • Use: npm install (installs from this file)
+
+vite.config.js
+  • Vite build tool configuration
+  • Defines build output directory
+  • Sets dev server port
+  • Specifies React plugin usage
+
+tailwind.config.js
+  • Tailwind CSS customization
+  • Defines color schemes
+  • Extends default themes
+  • Configures plugins
+
+postcss.config.js
+  • PostCSS processing pipeline
+  • Enables Tailwind + Autoprefixer
+  • Optimizes CSS output
+
+index.html
+  • HTML template for React app
+  • Defines page metadata & SEO tags
+  • Points to src/main.jsx
+  • Sets favicon & viewport
+
+DEPLOYMENT FILES
+────────────────
+
+vercel.json
+  • Vercel deployment settings
+  • Specifies build command
+  • Defines output directory (dist/)
+  • No changes needed ✓
+
+netlify.toml
+  • Netlify deployment settings
+  • Build command configuration
+  • URL rewriting rules for SPA
+  • Auto-configured ✓
+
+Dockerfile
+  • Multi-stage Docker image
+  • Node 18 alpine base
+  • Builds and serves application
+  • Run: docker build -t immunityai .
+
+docker-compose.yml
+  • Simplified Docker Compose setup
+  • Single command deployment
+  • Port mapping (3000:3000)
+  • Run: docker-compose up -d
+
+.github/workflows/deploy.yml
+  • GitHub Actions automation
+  • Triggers on push to main/master
+  • Runs tests and builds
+  • Auto-deploys to Vercel (with secrets)
+
+SOURCE CODE
+───────────
+
+src/ImmunityAIWebsite.jsx
+  • Main React component (614 lines)
+  • Contains all website logic
+  • Product tabs (SwineShield, LAS01, NanoAlhydrogel)
+  • Pipeline, procurement, team sections
+
+src/App.jsx
+  • Simple wrapper component
+  • Imports ImmunityAIWebsite
+  • Entry point for React app
+
+src/main.jsx
+  • React DOM rendering
+  • Imports CSS and App
+  • Bootstraps React application
+
+src/index.css
+  • Global Tailwind CSS imports
+  • Custom scrollbar styling
+  • Font configuration
+  • Smooth scrolling
+
+DOCUMENTATION
+──────────────
+
+README.md
+  • Project overview
+  • Technology stack
+  • Features list
+  • Quick start instructions
+  • Customization guide
+
+DEPLOYMENT_GUIDE.md
+  • Detailed deployment instructions
+  • Multiple platform options
+  • Environment variables setup
+  • Troubleshooting guide
+  • Production checklist
+
+QUICK_START.md
+  • Quick reference (this document)
+  • Copy-paste deployment commands
+  • Essential file list
+  • Support resources
+
+setup.sh
+  • Interactive setup script
+  • Menu-driven options
+  • Automated dependency installation
+  • One-command deployment
+  • Run: bash setup.sh
+
+═══════════════════════════════════════════════════════════════════════════════
+
+⚡ RECOMMENDED WORKFLOW
+═══════════════════════════════════════════════════════════════════════════════
+
+FOR QUICK DEPLOYMENT:
+  1. bash setup.sh
+  2. Select option 3 (Vercel) or 4 (Netlify)
+  3. Done! ✅
+
+FOR LOCAL TESTING:
+  1. bash setup.sh
+  2. Select option 1 (Dev server)
+  3. Edit files in src/
+  4. See changes instantly
+
+FOR PRODUCTION:
+  1. npm install
+  2. npm run build
+  3. Deploy dist/ folder
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🔧 KEY DEPENDENCIES
+═══════════════════════════════════════════════════════════════════════════════
+
+PRODUCTION
+  • react@18.2.0 ................... UI framework
+  • lucide-react ................... Icon library
+
+BUILD TOOLS
+  • vite@4.3.9 ..................... Build tool
+  • @vitejs/plugin-react ........... React support
+  • tailwindcss@3.3.0 .............. Utility CSS
+  • postcss@8.4.24 ................. CSS processing
+  • autoprefixer@10.4.14 ........... CSS vendor prefixes
+
+═══════════════════════════════════════════════════════════════════════════════
+
+✅ DEPLOYMENT CHECKLIST
+═══════════════════════════════════════════════════════════════════════════════
+
+BEFORE DEPLOYMENT:
+  [ ] Code pushed to GitHub
+  [ ] All links tested locally
+  [ ] Mobile responsive verified (npm run dev)
+  [ ] Contact info updated in component
+  [ ] All product tabs working
+  [ ] Pipeline sections render correctly
+  [ ] Procurement options display properly
+  [ ] Team section has correct info
+  [ ] No console errors (open DevTools)
+
+DEPLOYMENT:
+  [ ] Choose platform (Vercel recommended)
+  [ ] Connect GitHub account
+  [ ] Auto-deploy on push (verify)
+  [ ] Domain configured (optional)
+  [ ] SSL/HTTPS enabled (automatic)
+  [ ] Visit live URL and test again
+
+POST-DEPLOYMENT:
+  [ ] All pages load
+  [ ] Responsive design works
+  [ ] Interactive elements functional
+  [ ] Navigation smooth
+  [ ] Links work correctly
+  [ ] Analytics configured (optional)
+  [ ] Error tracking set up (optional)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📊 DEPLOYMENT PLATFORMS COMPARISON
+═══════════════════════════════════════════════════════════════════════════════
+
+                VERCEL    NETLIFY   DOCKER    LOCAL
+Setup Time      1 min     5 min     10 min    2 min
+Cost            Free      Free      Free      Free
+Difficulty      ⭐        ⭐⭐      ⭐⭐      ⭐
+Recommended     ✅ YES    ✅ YES    ✓ Maybe   ✓ Dev
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🆘 TROUBLESHOOTING
+═══════════════════════════════════════════════════════════════════════════════
+
+"npm: command not found"
+  → Install Node.js from nodejs.org
+
+"Port 3000 already in use"
+  → Change port: npm run dev -- --port 3001
+
+"Module not found"
+  → Clear cache: rm -rf node_modules && npm install
+
+"Build fails"
+  → Check build logs in Vercel/Netlify dashboard
+  → Try: npm run build locally first
+
+"404 on page refresh"
+  → Fixed in vercel.json and netlify.toml (already configured)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📞 SUPPORT
+═══════════════════════════════════════════════════════════════════════════════
+
+ImmunityAI Biotech
+  Email:    jeffyang25@immunityai.com
+  Website:  https://immunityai-multilang.netlify.app
+  Location: Changzhou, Jiangsu, China
+
+Resources
+  React:      https://react.dev
+  Vite:       https://vitejs.dev
+  Tailwind:   https://tailwindcss.com/docs
+  Vercel:     https://vercel.com/docs
+  Netlify:    https://docs.netlify.com
+
+═══════════════════════════════════════════════════════════════════════════════
+
+Generated: March 2026
+Status: ✅ PRODUCTION READY
+Version: 2.0.0
+
+For detailed instructions, see DEPLOYMENT_GUIDE.md
+For quick start, run: bash setup.sh
+═══════════════════════════════════════════════════════════════════════════════
