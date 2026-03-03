@@ -4,5 +4,5 @@
   "devCommand": "npm run dev",
   "cleanUrls": true,
   "framework": "vite",
-  "env": A123456
+  "env": "A123456"
 }
